@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dream-X Bangladesh</title>
+    <link rel="stylesheet" href="dream.css">
+    <link rel="stylesheet" href="dream-S-L.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Dream-X2.jpg" alt="Dream-X logo" id="navbar-logo">
+                <!-- <h1>DREAM-X BD</h1> -->
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#bikes">Bikes</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Join Button -->
+            <button class="login-btn" id="joinBtn" onclick="toggleForm()">JOIN</button>
+        </div>
+        <!-- Navbar Search Option -->
+        <div class="header-right">
+            <!-- Search Form -->
+            <form class="search-bar" action="#" method="get">
+                <input type="text" placeholder="Search cars or bikes..." name="search" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Sliding Login/Signup Form -->
+        <div class="form-container" id="formContainer">
+            <div class="form-content">
+                <button class="close-btn" onclick="toggleForm()">×</button>
+                <h2 id="formTitle">Welcome🕊️DreamX</h2>
+                <p id="formSubtitle">Please Login or Sign Up</p>
+
+                <!-- Login Form -->
+                <form id="loginForm">
+                    <div class="form-group1">
+                        <label for="login-username">Username:</label>
+                        <input type="text" id="login-username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group1">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" id="submitLogIn" class="form-btn">Login</button>
+                    <p>Don't have an account? <a href="#" id="signupLink" onclick="showSignupForm()">Sign Up</a></p>
+                </form>
+
+                <!-- Signup Form (hidden initially) -->
+                <form id="signupForm" style="display: none;">
+                    <div class="form-group2">
+                        <label for="signup-username">Username:</label>
+                        <input type="text" id="signup-username" placeholder="Create your username" required>
+                    </div>
+                    <div class="form-group2">
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group2">
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group2">
+                        <label for="signup-confirm-password">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" placeholder="Confirm your password"
+                            required>
+                    </div>
+                    <button type="submit" id="submitSignUp" class="form-btn">Sign Up</button>
+                    <p>Already have an account? <a href="#" id="loginLink" onclick="showLoginForm()">Login</a></p>
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h2>Find Your Dream Car and Bike</h2>
+            <p>Wide range of top brands, best prices, and amazing offers. Drive your dream now!</p>
+            <a href="#cars" class="btn">Explore Cars</a>
+            <a href="#bikes" class="btn">Explore Bikes</a>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="category-section">
+        <div class="container">
+            <h2>Our Cars Collection</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="Cars-Photos/BMW 7 Series 745Le xDrive 2020.jpg" alt="BMW 7 Series 745Le xDrive">
+                    <h3>BMW 7 Series 745Le xDrive</h3>
+                    <p>Price: 1,02,73,200 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/volvo s90 hybrid t8 r-design 2021.jpg"
+                        alt="Volvo S90 Hybrid T8 R-Design 2021">
+                    <h3>Volvo S90 Hybrid T8 R-Design 2021</h3>
+                    <p>Price: 50,45,040 BDT</p>
+                    <button class="btn">Buy Now</button>
+
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/Toyota Corolla Cross Z Leather Hybrid 2022.jpeg"
+                        alt="Toyota Corolla Cross Z Leather Hybrid 2022">
+                    <h3>Toyota Corolla Cross Z Leather Hybrid 2022</h3>
+                    <p>Price: 44,00,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/audi q5 2018.jpg" alt="Audi Q5 2018">
+                    <br>
+                    <h3>Audi Q5 2018</h3>
+                    <p>Price: 90,00,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/Audi A8 Hybrid 2021.jpg" alt="Audi A8 Hybrid 2021">
+                    <h3>Audi A8 Hybrid 2021</h3>
+                    <p>Price: 1,02,93,500 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/Mercedes AMG GT C 2021.jpg" alt="Mercedes AMG GT C 2021">
+                    <h3>Mercedes AMG GT C 2021</h3>
+                    <p>Price: 1,93,94,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/Lamborghini Huracan Evo 2021.jpg" alt="Lamborghini Huracan Evo 2021">
+                    <h3>Lamborghini Huracan Evo 2021</h3>
+                    <p>Price: 3,12,26,940 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/Toyota Land Cruiser 2021.jpg" alt="Toyota Land Cruiser 2021">
+                    <h3>Toyota Land Cruiser 2021</h3>
+                    <p>Price: 4,21,00,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/Range Rover Fifty LWB 2021.jpg" alt="Range Rover Fifty LWB 2021">
+                    <h3>Range Rover Fifty LWB 2021</h3>
+                    <p>Price: 1,85,25,286 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Cars-Photos/Jaguar XJ XJL Portfolio AWD.jpg" alt="Jaguar XJ XJL Portfolio AWD">
+                    <!-- <img src="https://via.placeholder.com/300x200" alt="Image Size In Box(300x200)"> -->
+                    <h3>Jaguar XJ XJL Portfolio AWD</h3>
+                    <p>Price: 1,30,20,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bikes Section -->
+    <section id="bikes" class="category-section">
+        <div class="container">
+            <h2>Our Bikes Collection</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="Bikes-Photos/yahmaha R15 V4.JPEG" alt="Yamaha R15 V4">
+                    <h3>Yamaha R15 V4</h3>
+                    <p>Price: 6,50,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/Honda CBR 150R.JPEG" alt="Honda CBR 150R">
+                    <h3>Honda CBR 150R</h3>
+                    <p>Price: 6,00,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/suzuki gsx-r150.JPEG" alt="Suzuki GSX-R150">
+                    <h3>Suzuki GSX-R150</h3>
+                    <p>Price: 4,65,950 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/KTM RC-125 2022.JPEG" alt="KTM RC-125 2022">
+                    <h3>KTM RC-125 2022</h3>
+                    <p>Price: 5,66,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/KTM 125 Duke Special.JPEG" alt="KTM 125 Duke Special">
+                    <h3>KTM 125 Duke Special</h3>
+                    <p>Price: 6,05,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/Hero Karizma XMR 210.JPEG" alt="Hero Karizma XMR 210">
+                    <h3>Hero Karizma XMR 210</h3>
+                    <p>Price: 3,99,990 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/Taro GP-1 V4.JPEG" alt="Taro GP-1 V4">
+                    <h3>Taro GP-1 V4</h3>
+                    <p>Price: 3,75,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/GPX Demon GR165RR Da Corsa.JPEG" alt="GPX Demon GR165RR Da Corsa">
+                    <h3>GPX Demon GR165RR Da Corsa</h3>
+                    <p>Price: 3,74,999 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/Yamaha MT 15.JPEG" alt="Yamaha MT 15">
+                    <h3>Yamaha MT 15</h3>
+                    <p>Price: 4,30,000 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="category-item">
+                    <img src="Bikes-Photos/Speeder NSX 165R V3.JPEG" alt="Speeder NSX 165R V3">
+                    <h3>Speeder NSX 165R V3</h3>
+                    <p>Price: 3,69,900 BDT</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Dream-X is your trusted platform for buying and selling cars and bikes. We bring to you a diverse range
+                of vehicles from reputed dealers and individual sellers. Drive your dream vehicle with us today!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: kishorhowlader555@gmail.com | Phone: +8801641905499</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a></a>
+            <a href="https://x.com/?lang=en" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp-square'></i></a>
+            <a href="https://web.telegram.org/a/" target="_blank"><i class='bx bxl-telegram'></i></a>
+            <a href="https://web.snapchat.com/" target="_blank"><i class='bx bxl-snapchat'></i></a>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Dream-X. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div>
+        <script src="dream.js"></script>
+        <script src="FireBase-Connection/onlinebase.js" type="module"></script>
+    </div>
+
+</body>
+
+</html>
